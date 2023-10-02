@@ -51,5 +51,34 @@ namespace Datos
 
             return false; // Si no se encontraron credenciales válidas, devuelve false
         }
+
+        public void RegistrarUsuario(Usuario nuevoUsuario)
+        {
+            List<Usuario> usuarios = CargarUsuarios(); // Cargar la lista de usuarios desde el archivo
+
+            // Verificar si el nombre de usuario ya existe
+            if (usuarios.Any(u => u.NombreUsuario == nuevoUsuario.NombreUsuario))
+            {
+                throw new Exception("El nombre de usuario ya está en uso.");
+            }
+
+            // Agregar el nuevo usuario a la lista
+            usuarios.Add(nuevoUsuario);
+
+            // Guardar la lista actualizada en el archivo
+            GuardarUsuarios(usuarios);
+        }
+
+        private void GuardarUsuarios(List<Usuario> usuarios)
+        {
+            using (StreamWriter sw = new StreamWriter(Filename))
+            {
+                foreach (Usuario usuario in usuarios)
+                {
+                    sw.WriteLine($"{usuario.NombreUsuario},{usuario.Contraseña},{usuario.Rol}");
+                }
+            }
+        }
+
     }
 }

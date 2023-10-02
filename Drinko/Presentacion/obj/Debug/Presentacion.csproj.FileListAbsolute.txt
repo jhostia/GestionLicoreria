@@ -1,0 +1,14 @@
+C:\Users\JHONATAN\Desktop\Jhonatan Hostia\GestionLicoreria\Drinko\Presentacion\obj\Debug\Presentacion.csproj.AssemblyReference.cache
+C:\Users\JHONATAN\Desktop\Jhonatan Hostia\GestionLicoreria\Drinko\Presentacion\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
+C:\Users\JHONATAN\Desktop\Jhonatan Hostia\GestionLicoreria\Drinko\Presentacion\bin\Debug\Presentacion.exe.config
+C:\Users\JHONATAN\Desktop\Jhonatan Hostia\GestionLicoreria\Drinko\Presentacion\bin\Debug\Presentacion.exe
+C:\Users\JHONATAN\Desktop\Jhonatan Hostia\GestionLicoreria\Drinko\Presentacion\bin\Debug\Presentacion.pdb
+C:\Users\JHONATAN\Desktop\Jhonatan Hostia\GestionLicoreria\Drinko\Presentacion\bin\Debug\Entidades.dll
+C:\Users\JHONATAN\Desktop\Jhonatan Hostia\GestionLicoreria\Drinko\Presentacion\bin\Debug\Logica.dll
+C:\Users\JHONATAN\Desktop\Jhonatan Hostia\GestionLicoreria\Drinko\Presentacion\bin\Debug\Datos.dll
+C:\Users\JHONATAN\Desktop\Jhonatan Hostia\GestionLicoreria\Drinko\Presentacion\bin\Debug\Entidades.pdb
+C:\Users\JHONATAN\Desktop\Jhonatan Hostia\GestionLicoreria\Drinko\Presentacion\bin\Debug\Logica.pdb
+C:\Users\JHONATAN\Desktop\Jhonatan Hostia\GestionLicoreria\Drinko\Presentacion\bin\Debug\Datos.pdb
+C:\Users\JHONATAN\Desktop\Jhonatan Hostia\GestionLicoreria\Drinko\Presentacion\obj\Debug\Presentacion.csproj.CopyComplete
+C:\Users\JHONATAN\Desktop\Jhonatan Hostia\GestionLicoreria\Drinko\Presentacion\obj\Debug\Presentacion.exe
+C:\Users\JHONATAN\Desktop\Jhonatan Hostia\GestionLicoreria\Drinko\Presentacion\obj\Debug\Presentacion.pdb
