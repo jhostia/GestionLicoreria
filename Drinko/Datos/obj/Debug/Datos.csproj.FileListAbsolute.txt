@@ -7,3 +7,12 @@ C:\Users\JHONATAN\Desktop\Jhonatan Hostia\GestionLicoreria\Drinko\Datos\obj\Debu
 C:\Users\JHONATAN\Desktop\Jhonatan Hostia\GestionLicoreria\Drinko\Datos\obj\Debug\Datos.csproj.CopyComplete
 C:\Users\JHONATAN\Desktop\Jhonatan Hostia\GestionLicoreria\Drinko\Datos\obj\Debug\Datos.dll
 C:\Users\JHONATAN\Desktop\Jhonatan Hostia\GestionLicoreria\Drinko\Datos\obj\Debug\Datos.pdb
+C:\Proyectos-git\ProgramacionIIIProyectodeaula\Drinko\Drinko\Datos\bin\Debug\Datos.dll
+C:\Proyectos-git\ProgramacionIIIProyectodeaula\Drinko\Drinko\Datos\bin\Debug\Datos.pdb
+C:\Proyectos-git\ProgramacionIIIProyectodeaula\Drinko\Drinko\Datos\bin\Debug\Entidades.dll
+C:\Proyectos-git\ProgramacionIIIProyectodeaula\Drinko\Drinko\Datos\bin\Debug\Entidades.pdb
+C:\Proyectos-git\ProgramacionIIIProyectodeaula\Drinko\Drinko\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
+C:\Proyectos-git\ProgramacionIIIProyectodeaula\Drinko\Drinko\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Proyectos-git\ProgramacionIIIProyectodeaula\Drinko\Drinko\Datos\obj\Debug\Datos.csproj.CopyComplete
+C:\Proyectos-git\ProgramacionIIIProyectodeaula\Drinko\Drinko\Datos\obj\Debug\Datos.dll
+C:\Proyectos-git\ProgramacionIIIProyectodeaula\Drinko\Drinko\Datos\obj\Debug\Datos.pdb

@@ -12,3 +12,17 @@ C:\Users\JHONATAN\Desktop\Jhonatan Hostia\GestionLicoreria\Drinko\Presentacion\b
 C:\Users\JHONATAN\Desktop\Jhonatan Hostia\GestionLicoreria\Drinko\Presentacion\obj\Debug\Presentacion.csproj.CopyComplete
 C:\Users\JHONATAN\Desktop\Jhonatan Hostia\GestionLicoreria\Drinko\Presentacion\obj\Debug\Presentacion.exe
 C:\Users\JHONATAN\Desktop\Jhonatan Hostia\GestionLicoreria\Drinko\Presentacion\obj\Debug\Presentacion.pdb
+C:\Proyectos-git\ProgramacionIIIProyectodeaula\Drinko\Drinko\Presentacion\bin\Debug\Presentacion.exe.config
+C:\Proyectos-git\ProgramacionIIIProyectodeaula\Drinko\Drinko\Presentacion\bin\Debug\Presentacion.exe
+C:\Proyectos-git\ProgramacionIIIProyectodeaula\Drinko\Drinko\Presentacion\bin\Debug\Presentacion.pdb
+C:\Proyectos-git\ProgramacionIIIProyectodeaula\Drinko\Drinko\Presentacion\bin\Debug\Entidades.dll
+C:\Proyectos-git\ProgramacionIIIProyectodeaula\Drinko\Drinko\Presentacion\bin\Debug\Logica.dll
+C:\Proyectos-git\ProgramacionIIIProyectodeaula\Drinko\Drinko\Presentacion\bin\Debug\Datos.dll
+C:\Proyectos-git\ProgramacionIIIProyectodeaula\Drinko\Drinko\Presentacion\bin\Debug\Entidades.pdb
+C:\Proyectos-git\ProgramacionIIIProyectodeaula\Drinko\Drinko\Presentacion\bin\Debug\Logica.pdb
+C:\Proyectos-git\ProgramacionIIIProyectodeaula\Drinko\Drinko\Presentacion\bin\Debug\Datos.pdb
+C:\Proyectos-git\ProgramacionIIIProyectodeaula\Drinko\Drinko\Presentacion\obj\Debug\Presentacion.csproj.AssemblyReference.cache
+C:\Proyectos-git\ProgramacionIIIProyectodeaula\Drinko\Drinko\Presentacion\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
+C:\Proyectos-git\ProgramacionIIIProyectodeaula\Drinko\Drinko\Presentacion\obj\Debug\Presentacion.csproj.CopyComplete
+C:\Proyectos-git\ProgramacionIIIProyectodeaula\Drinko\Drinko\Presentacion\obj\Debug\Presentacion.exe
+C:\Proyectos-git\ProgramacionIIIProyectodeaula\Drinko\Drinko\Presentacion\obj\Debug\Presentacion.pdb

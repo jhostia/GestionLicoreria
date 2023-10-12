@@ -4,3 +4,9 @@ C:\Users\JHONATAN\Desktop\Jhonatan Hostia\GestionLicoreria\Drinko\Entidades\obj\
 C:\Users\JHONATAN\Desktop\Jhonatan Hostia\GestionLicoreria\Drinko\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
 C:\Users\JHONATAN\Desktop\Jhonatan Hostia\GestionLicoreria\Drinko\Entidades\obj\Debug\Entidades.dll
 C:\Users\JHONATAN\Desktop\Jhonatan Hostia\GestionLicoreria\Drinko\Entidades\obj\Debug\Entidades.pdb
+C:\Proyectos-git\ProgramacionIIIProyectodeaula\Drinko\Drinko\Entidades\bin\Debug\Entidades.dll
+C:\Proyectos-git\ProgramacionIIIProyectodeaula\Drinko\Drinko\Entidades\bin\Debug\Entidades.pdb
+C:\Proyectos-git\ProgramacionIIIProyectodeaula\Drinko\Drinko\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Proyectos-git\ProgramacionIIIProyectodeaula\Drinko\Drinko\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Proyectos-git\ProgramacionIIIProyectodeaula\Drinko\Drinko\Entidades\obj\Debug\Entidades.dll
+C:\Proyectos-git\ProgramacionIIIProyectodeaula\Drinko\Drinko\Entidades\obj\Debug\Entidades.pdb

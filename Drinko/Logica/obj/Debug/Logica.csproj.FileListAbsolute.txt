@@ -9,3 +9,14 @@ C:\Users\JHONATAN\Desktop\Jhonatan Hostia\GestionLicoreria\Drinko\Logica\obj\Deb
 C:\Users\JHONATAN\Desktop\Jhonatan Hostia\GestionLicoreria\Drinko\Logica\obj\Debug\Logica.csproj.CopyComplete
 C:\Users\JHONATAN\Desktop\Jhonatan Hostia\GestionLicoreria\Drinko\Logica\obj\Debug\Logica.dll
 C:\Users\JHONATAN\Desktop\Jhonatan Hostia\GestionLicoreria\Drinko\Logica\obj\Debug\Logica.pdb
+C:\Proyectos-git\ProgramacionIIIProyectodeaula\Drinko\Drinko\Logica\bin\Debug\Logica.dll
+C:\Proyectos-git\ProgramacionIIIProyectodeaula\Drinko\Drinko\Logica\bin\Debug\Logica.pdb
+C:\Proyectos-git\ProgramacionIIIProyectodeaula\Drinko\Drinko\Logica\bin\Debug\Datos.dll
+C:\Proyectos-git\ProgramacionIIIProyectodeaula\Drinko\Drinko\Logica\bin\Debug\Entidades.dll
+C:\Proyectos-git\ProgramacionIIIProyectodeaula\Drinko\Drinko\Logica\bin\Debug\Datos.pdb
+C:\Proyectos-git\ProgramacionIIIProyectodeaula\Drinko\Drinko\Logica\bin\Debug\Entidades.pdb
+C:\Proyectos-git\ProgramacionIIIProyectodeaula\Drinko\Drinko\Logica\obj\Debug\Logica.csproj.AssemblyReference.cache
+C:\Proyectos-git\ProgramacionIIIProyectodeaula\Drinko\Drinko\Logica\obj\Debug\Logica.csproj.CoreCompileInputs.cache
+C:\Proyectos-git\ProgramacionIIIProyectodeaula\Drinko\Drinko\Logica\obj\Debug\Logica.csproj.CopyComplete
+C:\Proyectos-git\ProgramacionIIIProyectodeaula\Drinko\Drinko\Logica\obj\Debug\Logica.dll
+C:\Proyectos-git\ProgramacionIIIProyectodeaula\Drinko\Drinko\Logica\obj\Debug\Logica.pdb
