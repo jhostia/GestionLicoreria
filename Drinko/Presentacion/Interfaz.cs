@@ -21,7 +21,8 @@ namespace Presentacion
         static void Main(string[] args)
         {
             Interfaz interfaz = new Interfaz();
-            interfaz.Ejecutar();
+            //interfaz.Ejecutar();
+            interfaz.GestionLicor();
         }
 
         public  void Ejecutar()
@@ -122,3 +123,4 @@ namespace Presentacion
     }
 }
 
+        
