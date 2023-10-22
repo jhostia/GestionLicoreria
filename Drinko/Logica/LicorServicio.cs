@@ -15,21 +15,24 @@ namespace Logica
         public LicorServicio()
         {
             licorRepository = new LicorRepository();
+            licorList = licorRepository.ConsultarTodos();
         }
-        
-        public string Guardado (Licor licor)
+        public string Guardar(Licor licor)
         {
-            //Este condiconal valida que el dato que se vaya a guardar no sea nulo o este vacia la informacion 
             if (licor == null)
             {
-                return "No se puede agregar informacion nulas o sin in formacion";
+                return "No se puede guardar una liquidacion nula o sin informacion";
             }
-            //Si el dato no es nulo en tonces mandara la informacion al metodo guardar de ñla capa de datos y
-            //guardara la informacion en el archivo de texto
-            var msg = (licorRepository.GuardarLicor(licor));
-            return msg;
+            else
+            {
+                var mensaje = licorRepository.Guardar(licor);
+                licorList = licorRepository.ConsultarTodos();
+                return mensaje;
+            }
         }
-
-
+        public List<Licor> ConsultarTodos()
+        {
+            return licorList;
+        }
     }
 }

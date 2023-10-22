@@ -1,4 +1,5 @@
 ﻿using Datos;
+using Entidades;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,28 +10,44 @@ namespace Logica
 {
     public class GestorUsuarios
     {
-        private UsuarioRepository usuarioRepository; // Instancia de la capa de datos
+        private readonly UsuarioRepository _datosUsuarios;
 
         public GestorUsuarios()
         {
-            usuarioRepository = new UsuarioRepository(); // Inicializa la instancia de la capa de datos
+            _datosUsuarios = new UsuarioRepository();
         }
 
-        public bool IniciarSesion(string nombreUsuario, string contraseña)
+        public void GuardarUsuario(Usuario usuario)
         {
-            // Verificar si las credenciales son válidas utilizando la capa de datos
-            bool credencialesValidas = usuarioRepository.ValidarCredenciales(nombreUsuario, contraseña);
+            if (string.IsNullOrEmpty(usuario.NombreUsuario) || string.IsNullOrEmpty(usuario.CorreoElectronico) || string.IsNullOrEmpty(usuario.Contrasena))
+            {
+                throw new ArgumentException("Por favor complete todos los campos.");
+            }
 
-            if (credencialesValidas)
+            if (UsuarioExiste(usuario.NombreUsuario))
             {
-                // Las credenciales son válidas, permitir el inicio de sesión
-                return true;
+                throw new ArgumentException("El usuario ya existe. Por favor elija otro nombre de usuario.");
             }
-            else
+
+            _datosUsuarios.GuardarUsuario(usuario);
+        }
+
+        public bool UsuarioExiste(string nombreUsuario)
+        {
+            List<Usuario> usuarios = _datosUsuarios.ObtenerUsuarios();
+            return usuarios.Any(u => u.NombreUsuario == nombreUsuario);
+        }
+
+        public Usuario IniciarSesion(string nombreUsuario, string contrasena)
+        {
+            Usuario usuario = _datosUsuarios.ObtenerUsuarios().FirstOrDefault(u => u.NombreUsuario == nombreUsuario && u.Contrasena == contrasena);
+
+            if (usuario == null)
             {
-                // Las credenciales son incorrectas, mostrar un mensaje de error
-                return false;
+                throw new ArgumentException("Nombre de usuario o contraseña incorrectos.");
             }
+
+            return usuario;
         }
     }
 }

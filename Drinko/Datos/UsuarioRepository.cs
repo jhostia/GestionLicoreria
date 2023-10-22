@@ -10,75 +10,44 @@ namespace Datos
 {
     public class UsuarioRepository
     {
-        public string Filename = "Usuarios.txt";
+        private readonly string _rutaArchivo = "usuarios.txt";
 
-        public List<Usuario> CargarUsuarios()
+        public void GuardarUsuario(Usuario usuario)
         {
-            List<Usuario> usuarios = new List<Usuario>(); // Declaración e instancia de la lista
-
-            // Aquí, se carga la información de usuarios desde el archivo de texto y se agrega a la lista
-            string[] lineas = File.ReadAllLines(Filename);
-
-            foreach (string linea in lineas)
+            using (StreamWriter sw = File.AppendText(_rutaArchivo))
             {
-                string[] campos = linea.Split(',');
-                if (campos.Length == 3)
-                {
-                    string nombreUsuario = campos[0];
-                    string contraseña = campos[1];
-                    string rol = campos[2];
+                // Escribir los datos del usuario en el archivo de texto
+                sw.WriteLine($"{usuario.NombreUsuario},{usuario.CorreoElectronico},{usuario.Contrasena}");
+            }
+        }
 
-                    Usuario usuario = new Usuario(nombreUsuario, contraseña, rol);
-                    usuarios.Add(usuario); // Agrega el usuario a la lista
+        public List<Usuario> ObtenerUsuarios()
+        {
+            if (!File.Exists(_rutaArchivo))
+            {
+                // Si el archivo no existe, crearlo vacío
+                File.Create(_rutaArchivo).Close();
+            }
+
+            List<Usuario> usuarios = new List<Usuario>();
+
+            using (StreamReader sr = new StreamReader(_rutaArchivo))
+            {
+                string linea;
+                while ((linea = sr.ReadLine()) != null)
+                {
+                    string[] datosUsuario = linea.Split(',');
+                    Usuario usuario = new Usuario
+                    {
+                        NombreUsuario = datosUsuario[0],
+                        CorreoElectronico = datosUsuario[1],
+                        Contrasena = datosUsuario[2]
+                    };
+                    usuarios.Add(usuario);
                 }
             }
 
-            return usuarios; // Devuelve la lista de usuarios cargada desde el archivo
+            return usuarios;
         }
-
-        public bool ValidarCredenciales(string nombreUsuario, string contraseña)
-        {
-            List<Usuario> usuarios = CargarUsuarios(); // Cargar la lista de usuarios desde el archivo
-
-            foreach (Usuario usuario in usuarios)
-            {
-                // Compara el nombre de usuario y la contraseña ingresados con los datos en la lista
-                if (usuario.NombreUsuario == nombreUsuario && usuario.Contraseña == contraseña)
-                {
-                    return true; // Si las credenciales son válidas, devuelve true
-                }
-            }
-
-            return false; // Si no se encontraron credenciales válidas, devuelve false
-        }
-
-        public void RegistrarUsuario(Usuario nuevoUsuario)
-        {
-            List<Usuario> usuarios = CargarUsuarios(); // Cargar la lista de usuarios desde el archivo
-
-            // Verificar si el nombre de usuario ya existe
-            if (usuarios.Any(u => u.NombreUsuario == nuevoUsuario.NombreUsuario))
-            {
-                throw new Exception("El nombre de usuario ya está en uso.");
-            }
-
-            // Agregar el nuevo usuario a la lista
-            usuarios.Add(nuevoUsuario);
-
-            // Guardar la lista actualizada en el archivo
-            GuardarUsuarios(usuarios);
-        }
-
-        private void GuardarUsuarios(List<Usuario> usuarios)
-        {
-            using (StreamWriter sw = new StreamWriter(Filename))
-            {
-                foreach (Usuario usuario in usuarios)
-                {
-                    sw.WriteLine($"{usuario.NombreUsuario},{usuario.Contraseña},{usuario.Rol}");
-                }
-            }
-        }
-
     }
 }
