@@ -13,12 +13,18 @@ namespace PresentacionI
 {
     public partial class VentanaPrincipal : Form
     {
+        // Agrega una propiedad para rastrear el estado de inicio de sesión
+        //public bool UsuarioHaIniciadoSesion { get; set; } = false;
+
         public VentanaPrincipal()
         {
             InitializeComponent();
             this.WindowState = FormWindowState.Maximized;
-        }
+            // Deshabilitar botones al inicio
+            //btnAgregar.Enabled = false;
+            //btnConsultaree.Enabled = false;
 
+        }
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -70,17 +76,22 @@ namespace PresentacionI
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            AbrirFormHija(new VentanaRegistrarLicor());
+
+                AbrirFormHija(new VentanaRegistrarLicor());
+ 
+   
         }
 
         private void btnConsultaree_Click(object sender, EventArgs e)
         {
-            AbrirFormHija(new VentanaConsultar());
+
+                AbrirFormHija(new VentanaConsultar());
+            
         }
 
         private void btnInicio_Click(object sender, EventArgs e)
         {
-            AbrirFormHija(new Ventana_pp());
+            AbrirFormHija(new VentanaInicioSesion());
         }
 
         private void btnCerrarSesion_Click(object sender, EventArgs e)

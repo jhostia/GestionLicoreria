@@ -40,15 +40,19 @@ namespace Datos
                 lector.Close();
                 return licores;
             }
+     
         }
         private Licor Mapeo(string linea)
         {
-            var licor = new Licor();
-            //licor.TipoLicor = linea.Split(',')[0];
-            licor.Marca = linea.Split(';')[0];
-            licor.Precio = double.Parse(linea.Split(';')[1]);
-            licor.Grado = int.Parse(linea.Split(';')[2]);
-            licor.Sabor = linea.Split(';')[3];
+            var licor = new Licor();                
+
+            licor.TipoLicor = linea.Split(';')[0];
+            licor.Marca = linea.Split(';')[1];
+            licor.Precio = double.Parse(linea.Split(';')[2]);
+            licor.Grado = double.Parse(linea.Split(';')[3]);
+            licor.Sabor = linea.Split(';')[4];
+            licor.Fecha = DateTime.Parse(linea.Split(';')[5]);  
+            //licor.Fecha = Convert.ToDateTime(linea[5]);
 
             return licor;
         }

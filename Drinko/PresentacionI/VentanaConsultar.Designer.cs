@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
-            this.list = new System.Windows.Forms.ListBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -41,14 +39,22 @@
             this.btnConsultaree = new System.Windows.Forms.Button();
             this.txtCedula = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.comboBoxTipo = new System.Windows.Forms.ComboBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dtTipoLicor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtMarca = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtPrecio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtGrado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtFecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.DarkGray;
-            this.panel1.Controls.Add(this.checkedListBox1);
-            this.panel1.Controls.Add(this.list);
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panel1.Controls.Add(this.dataGridView1);
+            this.panel1.Controls.Add(this.comboBoxTipo);
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.panel4);
@@ -64,29 +70,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(898, 546);
             this.panel1.TabIndex = 1;
-            // 
-            // checkedListBox1
-            // 
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Items.AddRange(new object[] {
-            "Ron",
-            "Vino",
-            "Vodka",
-            "Tequila",
-            "Whisky",
-            "Cerveza"});
-            this.checkedListBox1.Location = new System.Drawing.Point(689, 144);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(70, 94);
-            this.checkedListBox1.TabIndex = 26;
-            // 
-            // list
-            // 
-            this.list.FormattingEnabled = true;
-            this.list.Location = new System.Drawing.Point(30, 118);
-            this.list.Name = "list";
-            this.list.Size = new System.Drawing.Size(619, 251);
-            this.list.TabIndex = 24;
             // 
             // panel5
             // 
@@ -206,10 +189,67 @@
             this.label7.TabIndex = 14;
             this.label7.Text = "Consultar Licor ";
             // 
+            // comboBoxTipo
+            // 
+            this.comboBoxTipo.FormattingEnabled = true;
+            this.comboBoxTipo.Items.AddRange(new object[] {
+            "Ron",
+            "Vino",
+            "Vodka",
+            "Tequila",
+            "Whisky",
+            "Cerveza",
+            "."});
+            this.comboBoxTipo.Location = new System.Drawing.Point(655, 118);
+            this.comboBoxTipo.Name = "comboBoxTipo";
+            this.comboBoxTipo.Size = new System.Drawing.Size(198, 21);
+            this.comboBoxTipo.TabIndex = 32;
+            this.comboBoxTipo.Text = "Tipo de licores";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dtTipoLicor,
+            this.dtMarca,
+            this.dtPrecio,
+            this.dtGrado,
+            this.dtFecha});
+            this.dataGridView1.Location = new System.Drawing.Point(61, 147);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(544, 243);
+            this.dataGridView1.TabIndex = 33;
+            // 
+            // dtTipoLicor
+            // 
+            this.dtTipoLicor.HeaderText = "Tipo de licor";
+            this.dtTipoLicor.Name = "dtTipoLicor";
+            // 
+            // dtMarca
+            // 
+            this.dtMarca.HeaderText = "Marca";
+            this.dtMarca.Name = "dtMarca";
+            // 
+            // dtPrecio
+            // 
+            this.dtPrecio.HeaderText = "Precio";
+            this.dtPrecio.Name = "dtPrecio";
+            // 
+            // dtGrado
+            // 
+            this.dtGrado.HeaderText = "Grado";
+            this.dtGrado.Name = "dtGrado";
+            // 
+            // dtFecha
+            // 
+            this.dtFecha.HeaderText = "Fecha";
+            this.dtFecha.Name = "dtFecha";
+            // 
             // VentanaConsultar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(898, 546);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -217,6 +257,7 @@
             this.Text = "VentanaConsultar";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -224,8 +265,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
-        private System.Windows.Forms.ListBox list;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel panel4;
@@ -236,5 +275,12 @@
         private System.Windows.Forms.Button btnConsultaree;
         private System.Windows.Forms.TextBox txtCedula;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox comboBoxTipo;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dtTipoLicor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dtMarca;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dtPrecio;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dtGrado;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dtFecha;
     }
 }

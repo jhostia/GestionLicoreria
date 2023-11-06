@@ -1,1 +1,2 @@
-dfsdf;23123123;3;sfafasds
+Vodka;blu label;1200000;5;lllll;2023-11-01
+Tequila;Tower;600000;5;dsf;2023-11-01

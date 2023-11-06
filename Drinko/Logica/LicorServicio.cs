@@ -10,6 +10,7 @@ namespace Logica
 {
     public class LicorServicio
     {
+        //private string fileName = "licor.txt";
         LicorRepository licorRepository = null;
         private List<Licor> licorList = null;
         public LicorServicio()
@@ -34,5 +35,6 @@ namespace Logica
         {
             return licorList;
         }
+
     }
 }

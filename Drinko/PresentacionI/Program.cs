@@ -16,7 +16,8 @@ namespace PresentacionI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new VentanaInicioSesion());
+            //Application.Run(new VentanaInicioSesion());
+            Application.Run(new VentanaPrincipal());
         }
     }
 }

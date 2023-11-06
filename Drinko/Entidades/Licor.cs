@@ -10,45 +10,26 @@ namespace Entidades
     {
         public Licor() { }
 
-        public Licor(string marca, double precio, int grado, string sabor)
+        public Licor(string tipoLicor, string marca, double precio, double grado, string sabor, DateTime fecha)
         {
+            TipoLicor = tipoLicor;
             Marca = marca;
             Precio = precio;
             Grado = grado;
             Sabor = sabor;
+            Fecha = fecha;
         }
         public override string ToString()
         {
-            return $"{Marca};{Precio};{Grado};{Sabor}";
+            return $"{TipoLicor};{Marca};{Precio};{Grado};{Sabor};{Fecha:yyyy-MM-dd}";
         }
-        //public string TipoLicor { get; set; }
+        public DateTime Fecha { get; set; }
+        public string TipoLicor { get; set; }
         public string Marca { get; set; }
         public double Precio { get; set; }
-        public int Grado { get; set; }
+        public double Grado { get; set; }
         public string Sabor { get; set; }
         //public Fecha { get; set; }
 
-
-
-
-        //public Licor(int id, string nombreLicor, string descripcion, decimal precio, int cantidadStock)
-        //{
-        //    Id = id;
-        //    NombreLicor = nombreLicor;
-        //    Descripcion = descripcion;
-        //    Precio = precio;
-        //    CantidadStock = cantidadStock;
-        //}
-
-        //public override string ToString()
-        //{
-        //    return $"{Id},{NombreLicor},{Descripcion},{Precio},{CantidadStock}";
-        //}
-
-        //public int Id { get; set; }
-        //public string NombreLicor { get; set; }
-        //public string Descripcion { get; set; }
-        //public decimal Precio { get; set; }
-        //public int CantidadStock { get; set; }
     }
 }

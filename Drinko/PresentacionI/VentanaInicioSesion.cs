@@ -14,32 +14,10 @@ namespace PresentacionI
 {
     public partial class VentanaInicioSesion : Form
     {
+
         public VentanaInicioSesion()
         {
             InitializeComponent();
-        }
-
-        private void btnCerrar_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void btnRestaurar_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Normal;
-            btnRestaurar.Visible = false;
-            btnMaximizar.Visible = true;
-        }
-
-        private void btnMaximizar_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Maximized;
-            btnRestaurar.Visible = true;
-        }
-
-        private void btnMinimizar_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
         }
 
         private void btnIniciarSesion_Click(object sender, EventArgs e)
@@ -53,16 +31,14 @@ namespace PresentacionI
                 // Iniciar sesión usando la capa de lógica
                 GestorUsuarios logicaUsuarios = new GestorUsuarios();
                 Usuario usuario = logicaUsuarios.IniciarSesion(nombreUsuario, contrasena);
-
                 MessageBox.Show($"Bienvenido, {usuario.NombreUsuario}.");
-                VentanaPrincipal ventanaPricipal = new VentanaPrincipal();
-                ventanaPricipal.Show();
                 txtUsuario.Clear();
                 txtContraseña.Clear();
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Error al iniciar sesión: {ex.Message}");
+ 
             }
         }
 
@@ -92,7 +68,6 @@ namespace PresentacionI
             pnlRegistrar.Visible = false;
             pnlIniciar.Visible = true;
         }
-
         private void btnRegiInicio_Click(object sender, EventArgs e)
         {
             pnlRegistrar.Visible = true;
